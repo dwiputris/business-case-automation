@@ -55,8 +55,13 @@ flowchart TD
     Node1 --> NextStep[ ]
     style NextStep fill:none,stroke:none
     
-    %% This line forces the text inside Node1 to align to the left
     style Node1 text-align:left
+    Node2["LAYER 1 - PROJECT GOVERNANCE<br>What constitutes a good business case?<br>Strategy | Financials | Expense | Value for Money"]
+    
+    Node2 --> NextStep[ ]
+    style NextStep fill:none,stroke:none
+    
+    style Node2 text-align:left
 ```
 
 ```text
