@@ -50,6 +50,23 @@ The solution is separated into three layers.
 
 ```mermaid
 flowchart TD
+    %% LAYER 1 DEFINITION
+    Node1["LAYER 1 - PROJECT GOVERNANCE<br>What constitutes a good business case?<br>Strategy | Financials | Expense | Value for Money"]
+    
+    %% INVISIBLE SPACING NODE FOR THE ARROW
+    Node1 --> NextStep[ ]
+    style NextStep fill:none,stroke:none
+    
+    %% LAYER 2 CONNECTION & DEFINITION
+    NextStep --> Node2["LAYER 2 - MVP DEFINITION<br>What features are core to the launch?<br>Scope | Feasibility | MVP Requirements | Delivery Timeline"]
+
+    %% LAYOUT & ALIGNMENT STYLES
+    style Node1 text-align:left
+    style Node2 text-align:left
+```
+
+```mermaid
+flowchart TD
     Node1["LAYER 1 - PROJECT GOVERNANCE<br>What constitutes a good business case?<br>Strategy | Financials | Expense | Value for Money"]
     
     Node1 --> NextStep[ ]
