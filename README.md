@@ -55,13 +55,16 @@ flowchart TD
     Node1 --> NextStep[ ]
     style NextStep fill:none,stroke:none
     
-    style Node1 text-align:left
-    Node2["LAYER 1 - PROJECT GOVERNANCE<br>What constitutes a good business case?<br>Strategy | Financials | Expense | Value for Money"]
+    NextStep Node2["LAYER 2 - EVALUATION ENGINE<br>How is the business case evaluated consistently?<br>Rules | Scoring | AI prompts | Red flags | Routing"]
     
     Node2 --> NextStep[ ]
     style NextStep fill:none,stroke:none
     
+    NextStep Node3["LAYER 3 - TECHNOLOGY IMPLEMENTATION<br>How is the methodology operationalized?<br>Portal | Workflow | Database | AI | Dashboard | Integration"]
+
+    style Node1 text-align:left
     style Node2 text-align:left
+    style Node3 text-align:left
 ```
 
 ```text
