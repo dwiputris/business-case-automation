@@ -11,15 +11,17 @@ The ends of the new process are:
   3. Improved evaluation consistency
   4. Visibility of plan versus realization
 
-### Current:
+### Current process
 
 ```mermaid
 flowchart LR
 A[Department] --> [Email] --> [Expense Management] --> [Manual Review] --> [Decision]
 ```
 
+### Target outcome
 
-### Target outcome:
+```mermaid
+flowchart LR
 A[Department] --> B[Portal]
 B --> C[Automated Intake]
 C --> D[Completeness Check]
@@ -29,7 +31,7 @@ F --> G[Decision]
 G --> H[Implementation]
 H --> I[Realization]
 I --> J[Dashboard]
-
+```
 
 ## Design principle
 
