@@ -15,8 +15,8 @@ The ends of the new process are:
 
 ```mermaid
 flowchart LR
-A[Department] --> B[Email]
-B --> C[Expense Management]
+A[/Department/] --> B[Email]
+B --> C[/Expense Management/]
 C --> D[Manual Review]
 D --> E[Decision]
 ```
@@ -25,11 +25,11 @@ D --> E[Decision]
 
 ```mermaid
 flowchart LR
-A[Department] --> B[Portal]
+A[/Department/] --> B[Portal]
 B --> C[Automated Intake]
 C --> D[Completeness Check]
 D --> E[AI-assisted Evaluation]
-E --> F[Expense Management Review]
+E --> F[/Expense Management/]
 F --> G[Decision]
 G --> H[Implementation]
 H --> I[Realization]
