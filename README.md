@@ -9,6 +9,7 @@
 ## Problem and solution
 Current:
 Department → Email → Expense Management → Manual Review → Decision
+
 Future:
 Department → Portal → Automated Screening → AI Evaluation → Expense Management Review → Decision → Tracking
 
