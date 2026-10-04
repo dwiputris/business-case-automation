@@ -48,14 +48,25 @@ The system should automate information collection, quality checks, scoring prepa
 
 The solution is separated into three layers.
 
+```mermaid
+flowchart TD
+    Node1["LAYER 1 - PROJECT GOVERNANCE<br>What constitutes a good business case?<br>Strategy | Financials | Expense | Value for Money"]
+    
+    Node1 --> NextStep[ ]
+    style NextStep fill:none,stroke:none
+    
+    %% This line forces the text inside Node1 to align to the left
+    style Node1 text-align:left
+```
+
 ```text
 +─────────────────────────────────────────────────────────────+
-| LAYER 1 — PROJECT GOVERNANCE                                │
-│ What constitutes a good business case?                      │
-│ Strategy | Financials | Expense | Value for Money           │
-+───────────────────────────────┬─────────────────────────────+
+| LAYER 1 — PROJECT GOVERNANCE                                |
+│ What constitutes a good business case?                      |
+│ Strategy | Financials | Expense | Value for Money           |
++─────────────────────────────── ┬  -----------------------------+
                                 │
-┌───────────────────────────────▼─────────────────────────────┐
++───────────────────────────────▼─────────────────────────────+
 | LAYER 2 — EVALUATION ENGINE                                 │
 │ How is the business case evaluated consistently?            │
 │ Rules | Scoring | AI prompts | Red flags | Routing          │
