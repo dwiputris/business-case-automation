@@ -1,10 +1,11 @@
 # Business Case Automation
 
-This is an automated Business Case Management and Evaluation framework for the Expense Management division of a financial service company.
+This is an automated Business Case Management and Evaluation framework for the Expense Management division of a financial-service company.
 
 ## Purpose
 
 This repository defines the project governance, evaluation methodology, and technology blueprint for automating the intake, assessment, routing, approval, tracking, and realization of business cases submitted by departments.
+
 The ends of the new process are:
   1. Reduced evaluation lead-time
   2. Trackings of expenditure requests
@@ -50,58 +51,18 @@ The solution is separated into three layers.
 
 ```mermaid
 flowchart TD
-    %% LAYER 1 DEFINITION
     Node1["LAYER 1 - PROJECT GOVERNANCE<br>What constitutes a good business case?<br>Strategy | Financials | Expense | Value for Money"]
     
-    %% INVISIBLE SPACING NODE FOR THE ARROW
-    Node1 --> NextStep[ ]
-    style NextStep fill:none,stroke:none
-    
-    %% LAYER 2 CONNECTION & DEFINITION
-    NextStep --> Node2["LAYER 2 - MVP DEFINITION<br>What features are core to the launch?<br>Scope | Feasibility | MVP Requirements | Delivery Timeline"]
+    Node2["LAYER 2 - EVALUATION ENGINE<br>How is the business case evaluated consistently?<br>Rules | Scoring | AI prompts | Red flags | Routing"]
 
-    %% LAYOUT & ALIGNMENT STYLES
-    style Node1 text-align:left
-    style Node2 text-align:left
-```
+    Node3["LAYER 3 - TECHNOLOGY IMPLEMENTATION<br>How is the methodology operationalized?<br>Portal | Workflow | Database | AI | Dashboard | Integration"]
 
-```mermaid
-flowchart TD
-    Node1["LAYER 1 - PROJECT GOVERNANCE<br>What constitutes a good business case?<br>Strategy | Financials | Expense | Value for Money"]
-    
-    Node1 --> NextStep[ ]
-    style NextStep fill:none,stroke:none
-    
-    NextStep --> Node2["LAYER 2 - EVALUATION ENGINE<br>How is the business case evaluated consistently?<br>Rules | Scoring | AI prompts | Red flags | Routing"]
-    
-    Node2 --> NextStep[ ]
-    style NextStep fill:none,stroke:none
-    
-    NextStep --> Node3["LAYER 3 - TECHNOLOGY IMPLEMENTATION<br>How is the methodology operationalized?<br>Portal | Workflow | Database | AI | Dashboard | Integration"]
+    Node1 --> Node2
+    Node2 --> Node3
 
-    style Node1 text-align:left
-    style Node2 text-align:left
-    style Node3 text-align:left
-```
-
-```text
-+─────────────────────────────────────────────────────────────+
-| LAYER 1 — PROJECT GOVERNANCE                                |
-│ What constitutes a good business case?                      |
-│ Strategy | Financials | Expense | Value for Money           |
-+─────────────────────────────── ┬  -----------------------------+
-                                │
-+───────────────────────────────▼─────────────────────────────+
-| LAYER 2 — EVALUATION ENGINE                                 │
-│ How is the business case evaluated consistently?            │
-│ Rules | Scoring | AI prompts | Red flags | Routing          │
-└───────────────────────────────┬─────────────────────────────┘
-                                │
-┌───────────────────────────────▼─────────────────────────────┐
-│ LAYER 3 — TECHNOLOGY IMPLEMENTATION                         │
-│ How is the methodology operationalized?                     │
-│ Portal | Workflow | Database | AI | Dashboard | Integration │
-└─────────────────────────────────────────────────────────────┘
+    style Node1 text-align:left,white-space:nowrap
+    style Node2 text-align:left,white-space:nowrap
+    style Node3 text-align:left,white-space:nowrap
 ```
 
 ## Repository structure
@@ -109,7 +70,6 @@ flowchart TD
 ```text
 business-case-automation/
 ├── README.md
-├── CONTRIBUTING.md
 ├── docs/
 │   ├── 01-business-governance/
 │   ├── 02-evaluation-engine/
@@ -134,7 +94,8 @@ business-case-automation/
 
 ## Status
 **Version:** 0.1 - Design / MVP definition
-This repository is a living showcase product and document.
+
+This repository is a living showcase of product and document.
 
 ## Roadmap
 
