@@ -49,11 +49,11 @@ The system should automate information collection, quality checks, scoring prepa
 The solution is separated into three layers.
 
 ```text
-┌─────────────────────────────────────────────────────────────┐
++─────────────────────────────────────────────────────────────+
 │ LAYER 1 — PROJECT GOVERNANCE                                │
 │ What constitutes a good business case?                      │
 │ Strategy | Financials | Expense | Value for Money           │
-└───────────────────────────────┬─────────────────────────────┘
++───────────────────────────────┬─────────────────────────────+
                                 │
 ┌───────────────────────────────▼─────────────────────────────┐
 │ LAYER 2 — EVALUATION ENGINE                                 │
