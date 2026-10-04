@@ -15,7 +15,7 @@ The ends of the new process are:
 
 ```mermaid
 flowchart LR
-A[Department] --> [Email] --> [Expense Management] --> [Manual Review] --> [Decision]
+[Department] --> [Email] --> [Expense Management] --> [Manual Review] --> [Decision]
 ```
 
 ### Target outcome
